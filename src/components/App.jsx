@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import './App.css';
+import CutsomButton from './customized-components/CutsomButton';
 import Main from './Main';
 import Sidebar from './Sidebar';
 
@@ -45,6 +46,16 @@ const App = () => {
           <Route path="/pricing" element={<Main />} />
           <Route path="*" element={<Main />} />
         </Routes>
+
+        <CutsomButton 
+        backgroundColor="#ea5455"
+        color="#fff"
+        hoverBackgroundColor="#cf4b4b"
+        href="https://google.com"
+        className="buy-button"
+        >
+          Buy now
+        </CutsomButton>
 
       </div>
     </BrowserRouter>

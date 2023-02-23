@@ -30,7 +30,7 @@ const PriceCardsSection = ({ isAnnualPrice }) => {
         <div className="row px-3 px-lg-5">
                 <PriceCard
                     className="col-12 col-lg-4 my-2"
-                    src="https://demos.pixinvent.com/vuexy-html-admin-template/assets/img/illustrations/page-pricing-basic.png"
+                    src="assets/pics/page-pricing-basic.png"
                     altImage="Piggy bank"
                     cardTitle="Basic"
                     cardText="A simple start for everyone"
@@ -46,7 +46,7 @@ const PriceCardsSection = ({ isAnnualPrice }) => {
 
                 <PriceCard
                     className="col-12 col-lg-4 my-2"
-                    src="https://demos.pixinvent.com/vuexy-html-admin-template/assets/img/illustrations/page-pricing-standard.png"
+                    src="assets/pics/page-pricing-standard.png"
                     altImage="Metal safe"
                     cardTitle="Pro"
                     cardText="For small to medium businesses"
@@ -65,7 +65,7 @@ const PriceCardsSection = ({ isAnnualPrice }) => {
 
                 <PriceCard
                     className="col-12 col-lg-4 my-2"
-                    src="https://demos.pixinvent.com/vuexy-html-admin-template/assets/img/illustrations/page-pricing-enterprise.png"
+                    src="assets/pics/page-pricing-enterprise.png"
                     altImage="Rocket"
                     cardTitle="Enterprise"
                     cardText="Solution for big organizations"

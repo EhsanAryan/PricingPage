@@ -12,12 +12,12 @@ const Badge = styled.span`
 
 const CustomBadge = ({ children, backgroundColor, color, fontSize, fontWeight, className }) => {
     return (
-        <Badge 
-        backgroundColor={backgroundColor} 
-        color={color}
-        fontSize={fontSize}
-        fontWeight={fontWeight}
-        className={className}
+        <Badge
+            backgroundColor={backgroundColor}
+            color={color}
+            fontSize={fontSize}
+            fontWeight={fontWeight}
+            className={className}
         >
             {children}
         </Badge>

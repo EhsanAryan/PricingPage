@@ -23,14 +23,13 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="main-navbar d-flex justify-content-between align-items-center 
-        position-relative">
+        <nav className="main-navbar d-flex justify-content-between align-items-center">
             <div className="d-flex justify-content-start align-items-center">
                 <i className="fa-solid fa-bars open-trigger me-4 fs-5"
                     onClick={() => setIsOpen(true)}></i>
                 <span className="search-section"
                     onClick={(ev) => handleOpenSerachbar(ev)}>
-                    <i class="fa-solid fa-magnifying-glass me-2 text-muted fs-5"></i>
+                    <i className="fa-solid fa-magnifying-glass me-2 text-muted fs-5"></i>
                     <span className="d-none d-md-inline text-muted">Search (Ctrl+/)</span>
                 </span>
             </div>
@@ -40,30 +39,30 @@ const Navbar = () => {
                 onClick={(ev) => ev.stopPropagation()}>
                 <input type="text" className="form-control w-100 h-100"
                     placeholder="Search..." ref={searchbarRef} />
-                <i class="fa-solid fa-xmark close-searchbar"
+                <i className="fa-solid fa-xmark close-searchbar"
                     onClick={() => setOpenSearchbar(false)}></i>
             </div>
             {/* End searchbar */}
 
             <div className="d-flex justify-content-end align-items-center">
                 <CircleAvatar
-                    src="https://a-z-animals.com/media/2022/12/iStock-1349796257.jpg"
+                    src="/assets/pics/iran-flag.jpg"
                     className="me-4 pointer"
                 />
 
                 {
                     isDarkMode ?
                         (
-                            <i class="fa-solid fa-sun fs-3 me-4 main-text-color pointer"
+                            <i className="fa-solid fa-sun fs-3 me-4 main-text-color pointer"
                                 onClick={() => setIsDarkMode(prevValue => !prevValue)}></i>
                         ) : (
-                            <i class="fa-solid fa-moon fs-3 me-4 main-text-color pointer"
+                            <i className="fa-solid fa-moon fs-3 me-4 main-text-color pointer"
                                 onClick={() => setIsDarkMode(prevValue => !prevValue)}></i>
                         )
                 }
 
                 <CircleAvatar
-                    src="https://pixlr.com/images/index/remove-bg.webp"
+                    src="/assets/pics/remove-bg.jpg"
                     hasDot={true}
                     className="pointer"
                 />

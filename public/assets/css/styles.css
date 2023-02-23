@@ -1,3 +1,4 @@
+/* Start Initial Styles */
 body *:not(i) {
   font-family: roboto;
 }
@@ -57,6 +58,16 @@ body.dark {
 .purple-color {
   color: var(--purple-color) !important;
 }
+
+.buy-button {
+  box-shadow: 0 1px 20px 1px #ea5455 !important;
+  position: fixed;
+  bottom: 60px;
+  right: 40px;
+  z-index: 1500;
+}
+/* End Initial Styles */
+
 /* Start Sidebar */
 .sidebar {
   position: fixed;
@@ -149,15 +160,41 @@ body.dark {
 }
 /* End Sidebar */
 
+/* Start Main Section */
+.main-section {
+  position: fixed;
+  top: 0;
+  left: 80px;
+  width: calc(100% - 80px);
+  height: 100%;
+  overflow: auto;
+  z-index: 1000;
+  background-color:  var(--body-background-color);
+  padding: 20px 40px 5px;
+  box-sizing: border-box;
+  transition: all 0.25s;
+}
+
+.main-with-sidebar {
+  left: 260px;
+  width: calc(100% - 260px);
+}
+/* End Main Section */
+
 /* Start Navbar */
 .main-navbar {
   background-color: var(--background-color);
+  position: relative;
+  /* right: 0;
+  left: 0; */
   width: 100%;
   height: 65px;
-  box-shadow: 0 0 5px rgba(165, 163, 174, 0.3);
+  z-index: 1001;
+  box-shadow: 0 0 5px rgba(165, 163, 174, 0.5);
   border-radius: 10px;
   box-sizing: border-box;
-  padding: 0px 15px;
+  padding: 0px 15px;  
+  margin: auto;
 }
 
 .search-section {
@@ -170,7 +207,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-z-index: 1001;
+z-index: 1002;
 }
 
 .navbar-searchbar input {
@@ -201,38 +238,18 @@ transition: all 0.2s;
 }
 /* End Navbar */
 
-/* Start Main Section */
-.main-section {
-  position: fixed;
-  top: 0;
-  left: 80px;
-  width: calc(100% - 80px);
-  height: 100%;
-  overflow: auto;
-  z-index: 1000;
-  background-color:  var(--body-background-color);
-  padding: 20px 30px;
-  box-sizing: border-box;
-  transition: all 0.25s;
-}
-
-.main-with-sidebar {
-  left: 260px;
-  width: calc(100% - 260px);
-}
-/* End Main Section */
-
 /*  Start Price Section */
 .price-section {
   background-color: var(--background-color);
   color: var(--main-text-color);
-  box-shadow: 0 0 5px rgba(165, 163, 174, 0.3);
-  padding: 80px 0px;
+  box-shadow: 0 0 5px rgba(165, 163, 174, 0.5);
+  padding: 80px 10px 0;
   border-radius: 10px;
+  width: 100%;
   overflow: hidden !important;
 }
 
-.badge-container {
+.save-badge-container {
   position: absolute;
   top: 10px;
   left: 0;
@@ -250,15 +267,15 @@ transition: all 0.2s;
   bottom: 10px;
 }
 
-.img-card {
-  max-width: 150px;
-  max-height: 150px;
-}
-
 .price-card {
   background-color: var(--background-color);
   border: 1px solid var(--border-color);
   position: relative;
+}
+
+.img-card {
+  max-width: 150px;
+  max-height: 150px;
 }
 
 .popular-price-card {
@@ -296,11 +313,64 @@ transition: all 0.2s;
 }
 
 .plan-section {
-  margin: 5rem 0;
+  margin: 5rem 0 3rem;
+  font-size: 0.9rem;
 }
 
+.plan-table :is(th, td) {
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
 
+.plan-table tr :is(th, td):first-child {
+  text-align: left;
+}
+
+.star-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  transform: translate(36px, -8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px !important;
+  height: 28px !important;
+  padding: 5px !important;
+}
+
+.circle-icon-badge {
+  padding: 10px !important;
+}
+
+.faq-section {
+  background-color: var(--body-background-color);
+  padding: 5rem 1rem 4rem;
+}
+
+.no-before::before {
+  display: none !important;
+}
+
+.grey-box-shadow {
+  box-shadow: 0 0 5px rgba(165, 163, 174, 0.5) !important;
+}
 /* End Price Section */
+
+/* Start Footer */
+.account-icon {
+  color: #7367f0 !important;
+  transition: all 0.2s;
+}
+
+.account-icon:hover {
+  color: #222 !important;
+  transform: scale(1.1);
+}
+/* End Footer */
 
 
 /* Start Media Query */
@@ -313,7 +383,7 @@ transition: all 0.2s;
   .main-section {
     left: 0 !important;
     width: 100% !important;
-    padding: 15px 18px !important;
+    padding: 15px 18px 5px !important;
   }
 
   .hidden-item {
@@ -363,7 +433,7 @@ transition: all 0.2s;
 
 ::-webkit-scrollbar-track {
   background-color: var(--background-color);
-  /* box-shadow: 0px 0px 3px black inset; */
+  box-shadow: 0px 0px 3px rgba(91, 91, 91, 0.75) inset;
   border-radius: 10px;
 }
 

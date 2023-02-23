@@ -16,7 +16,7 @@ const ImagedCard = () => {
                     Sent 14-day FREE trial
                 </CutsomButton>
             </div>
-            <img src="https://demos.pixinvent.com/vuexy-html-admin-template/assets/img/illustrations/girl-with-laptop.png"
+            <img src="assets/pics/girl-with-laptop.png"
              alt="Girl with laptop" className="trial-img" />
         </div>
     );

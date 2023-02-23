@@ -18,8 +18,8 @@ const PriceSwitch = ({ setIsAnnualPrice }) => {
                 handleChange={handleSetAnnualPrice}
             />
 
-            <div className="badge-container">
-                <i class="fa-solid fa-arrow-left-long arrow-icon me-2"></i>
+            <div className="save-badge-container">
+                <i className="fa-solid fa-arrow-left-long arrow-icon me-2"></i>
                 <CustomBadge
                     backgroundColor="#eae8fd"
                     color="#7367f0"

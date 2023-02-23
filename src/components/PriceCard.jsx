@@ -26,10 +26,10 @@ const PriceCard = ({
                 {
                     isPopular ? (
                         <CustomBadge
-                        backgroundColor="#eae8fd"
-                        color="#7367f0"
-                        fontSize="0.8rem"
-                        className="popular-badge"
+                            backgroundColor="#eae8fd"
+                            color="#7367f0"
+                            fontSize="0.8rem"
+                            className="popular-badge"
                         >
                             Popular
                         </CustomBadge>
@@ -37,7 +37,7 @@ const PriceCard = ({
                 }
                 <div className="card-body">
                     <img src={src}
-                        class="img-card" alt={altImage || "Pic"} />
+                        className="img-card" alt={altImage || "Pic"} />
                 </div>
                 <div className="card-body pb-4">
                     <h3 className="card-title mb-1">{cardTitle}</h3>
