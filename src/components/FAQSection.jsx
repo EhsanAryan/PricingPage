@@ -43,7 +43,7 @@ const FAQSection = () => {
                             key={`accordion_${index}`}
                             summary={a.summary}
                             details={a.details}
-                            className="my-2 rounded-3 no-before text-start grey-box-shadow"
+                            className="my-2 rounded-3 no-before text-start grey-box-shadow main-background-color"
                             summaryClasses="main-title-text-color fw-bold"
                             detailsClasses="main-text-color"
                             />

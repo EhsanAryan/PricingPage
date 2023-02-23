@@ -6,7 +6,7 @@ import CircleAvatar from './customized-components/CircleAvatar';
 
 const Navbar = () => {
 
-    const { setIsOpen, isDarkMode, setIsDarkMode, openSearchbar, setOpenSearchbar, searchbarRef } = useContext(AppContext);
+    const { setIsOpen, isDarkMode, setIsDarkMode, openSearchbar, setOpenSearchbar, searchbarRef, isExtended } = useContext(AppContext);
 
     const handleOpenSerachbar = (ev) => {
         ev.stopPropagation();
@@ -23,7 +23,8 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="main-navbar d-flex justify-content-between align-items-center">
+        <nav className={`main-navbar d-flex justify-content-between align-items-center
+        ${isExtended ? "navbar-with-sidebar" : ""}`}>
             <div className="d-flex justify-content-start align-items-center">
                 <i className="fa-solid fa-bars open-trigger me-4 fs-5"
                     onClick={() => setIsOpen(true)}></i>
