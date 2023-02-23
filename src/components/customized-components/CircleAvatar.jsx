@@ -10,25 +10,28 @@ const Avatar = styled.img`
         position: absolute;
         bottom: 0;
         right: 0;
-        width: ${props => props.dotWidth || "12px"};
-        height: ${props => props.dotWidth || "12px"};
         background-color: ${props => props.dotColor || "#39c826"};
         border: 2px solid #fff;
         border-radius: 50%;
-        translate: -10% 10%;
+        translate: 0 12%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 `;
 
-const CircleAvatar = ({ src, width, hasDot,dotWidth, dotColor, className }) => {
+const CircleAvatar = ({ src, width, hasDot, dotColor, className }) => {
     return (
         <div className={`position-relative ${className}`}>
-            <Avatar src={src} width={width}  dotWidth={dotWidth} dotColor={dotColor} />
+            <Avatar src={src} width={width} dotColor={dotColor} />
                 {
                     hasDot ? (
-                        <div className="avatar-dot"></div>
+                        <div className="avatar-dot"
+                        style={{
+                            width: width ? `calc(${width} / 3)` : "13.3px",
+                            height: width ? `calc(${width} / 3)` : "13.3px"
+                        }}>
+                        </div>
                     ) : null
                 }
         </div>
