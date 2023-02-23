@@ -172,14 +172,13 @@ body.dark {
 .main-section {
   position: fixed;
   top: 0;
-  left: calc(80px + 40px);
-  width: calc(100% - 120px);
+  left: 80px;
+  width: calc(100% - 80px);
   height: 100%;
   overflow: auto;
   z-index: 1500;
   background-color:  var(--body-background-color);
-  padding-top: 100px;
-  padding-right: 40px;
+  padding: 90px 40px 0px;
   box-sizing: border-box;
   transition: all 0.25s;
 }
@@ -395,10 +394,9 @@ transition: all 0.2s;
   }
 
   .main-section {
-    left: 20px !important;
-    width: calc(100% - 20px) !important;
-    padding-top: 100px !important;
-    padding-right: 20px;
+    left: 0 !important;
+    width: 100% !important;
+    padding: 90px 20px 0 !important;
   }
 
   .main-navbar {
