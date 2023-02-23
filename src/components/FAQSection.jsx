@@ -40,6 +40,7 @@ const FAQSection = () => {
                 {accordions.map((a, index) => {
                         return (
                             <CustomAccordion
+                            key={`accordion_${index}`}
                             summary={a.summary}
                             details={a.details}
                             className="my-2 rounded-3 no-before text-start grey-box-shadow"

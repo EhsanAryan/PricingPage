@@ -4,8 +4,9 @@ const Footer = () => {
     let date = new Date().getFullYear();
 
     return (
-        <footer className="main-text-color mt-4 mb-1 
-        d-flex justify-content-between align-items-center">
+        <footer className="w-100 main-text-color mt-4 mb-3 
+        d-flex flex-column justify-content-start align-items-center 
+        flex-md-row justify-content-md-between">
             <div>
                 ©
                 <span className="ms-1">{date}</span>,
@@ -15,7 +16,8 @@ const Footer = () => {
                     <i class="fa-brands fa-github fs-4 account-icon"></i>
                 </a>
             </div>
-            <ul className="list-unstyled d-flex justify-content-arround align-items-center">
+            <ul className="list-unstyled d-flex justify-content-arround align-items-center 
+            my-2 my-md-0">
                 <li className="mx-2"><a href="https://google.com" className="no-link main-text-color" 
                 target="_blank" rel="noreferrer">
                     License</a></li>

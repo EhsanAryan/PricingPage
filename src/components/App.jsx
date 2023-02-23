@@ -1,15 +1,14 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useContext } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
-import './App.css';
 import CutsomButton from './customized-components/CutsomButton';
 import Main from './Main';
+import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
 const App = () => {
-  const { isDarkMode, setIsOpen, setOpenSearchbar, searchbarRef } = useContext(AppContext);
+  const { isDarkMode, isOpen, setIsOpen, setOpenSearchbar, searchbarRef } = useContext(AppContext);
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -19,11 +18,11 @@ const App = () => {
     });
 
     document.body.addEventListener("keydown", (ev) => {
-      if(ev.key === "/" && ev.ctrlKey) {
+      if (ev.key === "/" && ev.ctrlKey) {
         setOpenSearchbar(prevValue => !prevValue);
         setTimeout(() => {
           searchbarRef.current.focus();
-      }, 100);
+        }, 100);
       }
     });
   }, []);
@@ -37,28 +36,29 @@ const App = () => {
   }, [isDarkMode]);
 
   return (
-    <BrowserRouter>
-      <div className='position-fixed top-0 left-0 w-100 h-100'>
+
+      <div className='position-fixed top-0 left-0 w-100 h-100 p-0 m-0'>
         <Sidebar />
+        <Navbar />
+        <Main />
 
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/pricing" element={<Main />} />
-          <Route path="*" element={<Main />} />
-        </Routes>
-
-        <CutsomButton 
-        backgroundColor="#ea5455"
-        color="#fff"
-        hoverBackgroundColor="#cf4b4b"
-        href="https://google.com"
-        className="buy-button"
+        <CutsomButton
+          backgroundColor="#ea5455"
+          color="#fff"
+          hoverBackgroundColor="#cf4b4b"
+          href="https://google.com"
+          className="buy-button"
         >
           Buy now
         </CutsomButton>
 
+        {/* Start sidebar modal */}
+        <div className={`sidebar-modal-base ${isOpen ? "" : "d-none"}`}
+          onClick={() => setIsOpen(false)}>
+        </div>
+        {/* End sidebar modal */}
       </div>
-    </BrowserRouter>
+
   );
 }
 

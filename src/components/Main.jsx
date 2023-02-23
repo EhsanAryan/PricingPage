@@ -1,23 +1,21 @@
 import React from 'react';
 import { useContext } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
-import Price from './Price';
-import Navbar from './Navbar';
 import Footer from './Footer';
+import Price from './Price';
 
 const Main = () => {
-    const { isExtended, setIsOpen, isOpen } = useContext(AppContext);
+    const { isExtended } = useContext(AppContext);
 
     return (
         <div className={`main-section ${isExtended ? "main-with-sidebar" : ""}`}>
-            <Navbar />
-            <Price />
-            <Footer />
-            {/* Start sidebar modal */}
-            <div className={`sidebar-modal-base ${isOpen ? "" : "d-none"}`}
-                onClick={() => setIsOpen(false)}>
-            </div>
-            {/* End sidebar modal */}
+            <Routes>
+                <Route path="/" element={<Price />} />
+                <Route path="/pricing" element={<Price />} />
+                <Route path="*" element={<Price />} />
+            </Routes>
+            <Footer/>
         </div>
     );
 }
