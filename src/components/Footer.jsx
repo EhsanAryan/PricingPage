@@ -18,19 +18,19 @@ const Footer = () => {
             </div>
             <ul className="list-unstyled d-flex justify-content-arround align-items-center 
             my-2 my-md-0">
-                <li className="mx-2"><a href="https://google.com" className="no-link main-text-color" 
+                <li className="mx-2"><a href="https://github.com/EhsanAryan" className="no-link main-text-color" 
                 target="_blank" rel="noreferrer">
                     License</a></li>
-                <li className="mx-2"><a href="https://google.com" className="no-link main-text-color" 
+                <li className="mx-2"><a href="https://github.com/EhsanAryan" className="no-link main-text-color" 
                 target="_blank" rel="noreferrer">
                     More</a></li>
-                <li className="mx-2"><a href="https://google.com" className="no-link main-text-color" 
+                <li className="mx-2"><a href="https://github.com/EhsanAryan" className="no-link main-text-color" 
                 target="_blank" rel="noreferrer">
                     Themes</a></li>
-                <li className="mx-2"><a href="https://google.com" className="no-link main-text-color" 
+                <li className="mx-2"><a href="https://github.com/EhsanAryan" className="no-link main-text-color" 
                 target="_blank" rel="noreferrer">
                     Documentation</a></li>
-                <li className="mx-2"><a href="https://google.com" className="no-link main-text-color" 
+                <li className="mx-2"><a href="https://github.com/EhsanAryan" className="no-link main-text-color" 
                 target="_blank" rel="noreferrer">
                     Support</a></li>
             </ul>

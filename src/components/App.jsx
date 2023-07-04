@@ -46,7 +46,7 @@ const App = () => {
           backgroundColor="#ea5455"
           color="#fff"
           hoverBackgroundColor="#cf4b4b"
-          href="https://google.com"
+          href="https://github.com/EhsanAryan"
           className="buy-button"
         >
           Buy now

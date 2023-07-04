@@ -8,7 +8,7 @@ const SidebarHeader = () => {
 
     return (
         <div className="d-flex justify-content-between align-items-center">
-            <a href="https://google.com" target="_blank" rel="noreferrer"
+            <a href="https://github.com/EhsanAryan" target="_blank" rel="noreferrer"
                 className="d-flex justify-content-start align-items-center no-link sidebar-logo">
                 <span>
                     <svg width="37" height="37" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -184,8 +184,8 @@ body.dark {
 }
 
 .main-with-sidebar {
-  left: calc(260px + 40px);
-  width: calc(100% - 300px);
+  left: 260px;
+  width: calc(100% - 260px);
 }
 /* End Main Section */
 
@@ -196,6 +196,7 @@ body.dark {
   top: 15px;
   left: calc(80px + 40px);
   width: calc(100% - 170px);
+  /* width: calc(100% - 80px - 40px - 40px); */
   height: 65px;
   z-index: 1600;
   box-shadow: 0 0 5px rgba(165, 163, 174, 0.5);
@@ -206,7 +207,7 @@ body.dark {
 }
 
 .navbar-with-sidebar {
-  left: 300px;
+  left: calc(260px + 40px);
   width: calc(100% - 350px);
 }
 
@@ -236,18 +237,18 @@ body.dark {
 }
 
 .navbar-searchbar input::placeholder {
-padding-left: 5px;
-color: var(--placeholder-color) !important;
+  padding-left: 5px;
+  color: var(--placeholder-color) !important;
 }
 
 .close-searchbar {
-color: #6c757d;
-font-size: 1.5rem;
-position: absolute;
-right: 15px;
-top: 22px;
-cursor: pointer;
-transition: all 0.2s;
+  color: #6c757d;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 /* End Navbar */
 

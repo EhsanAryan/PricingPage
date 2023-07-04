@@ -116,7 +116,7 @@ const PlanTable = () => {
                                         backgroundColor="#e9e7fd"
                                         color="#7367f0"
                                         hoverBackgroundColor="#d9d7ef"
-                                        href="https://google.com"
+                                        href="https://github.com/EhsanAryan"
                                         fontSize="0.9rem"
                                     >
                                         Choose Plan
@@ -127,7 +127,7 @@ const PlanTable = () => {
                                         backgroundColor="#7367f0"
                                         color="#fff"
                                         hoverBackgroundColor="#6055da"
-                                        href="https://google.com"
+                                        href="https://github.com/EhsanAryan"
                                         fontSize="0.9rem"
                                     >
                                         Choose Plan
@@ -138,7 +138,7 @@ const PlanTable = () => {
                                         backgroundColor="#e9e7fd"
                                         color="#7367f0"
                                         hoverBackgroundColor="#d9d7ef"
-                                        href="https://google.com"
+                                        href="https://github.com/EhsanAryan"
                                         fontSize="0.9rem"
                                     >
                                         Choose Plan

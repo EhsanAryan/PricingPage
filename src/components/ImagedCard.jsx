@@ -11,7 +11,7 @@ const ImagedCard = () => {
                 backgroundColor="#7367f0"
                 color="#fff"
                 hoverBackgroundColor="#655adc"
-                href="https://google.com"
+                href="https://github.com/EhsanAryan"
                 >
                     Sent 14-day FREE trial
                 </CutsomButton>
